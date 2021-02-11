@@ -1,0 +1,16 @@
+<div class="container">
+	<div class="block-1">
+		<h3>Selected cart</h3>
+		<div class="item cart-item" *ngFor="let item of products">
+			<span class="item-title">price: </span>
+			<span>{{item.price * exchangeRates[baseCurrency]}} {{baseCurrency}}</span>
+		</div>
+	</div>
+
+	<div class="block-2">
+		<h3>Total cart price (in currency):</h3>
+		<div class="item result-item" *ngFor="let item of objectKeys(totalPriceInCurrency)">
+			<span class="item-title">{{item}}: </span> <span>{{totalPriceInCurrency[item]}}</span>
+		</div>
+	</div>
+</div>

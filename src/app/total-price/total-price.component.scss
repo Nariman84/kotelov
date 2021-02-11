@@ -1,0 +1,18 @@
+.cart-item span {
+  text-transform: lowercase;
+}
+
+.item {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+
+  &-title {
+    font-weight: bold;
+  }
+
+  span {
+    width: 50%;
+    text-align: left;
+  }
+}
